@@ -1,0 +1,10 @@
+$red: red;
+$defaultFont: 'Montserrat';
+
+@import "components/mixins", "components/second";
+
+@import "../blocks/text-info/text-info";
+
+h1 {
+  color: $red;
+}

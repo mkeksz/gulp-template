@@ -1,0 +1,9 @@
+ul {
+  @include flex();
+  @include font();
+  display: flex;
+}
+
+p {
+  color: $red;
+}

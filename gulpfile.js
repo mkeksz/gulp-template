@@ -20,6 +20,7 @@ function html_build() {
         collapseWhitespace: true // убрать пробелы
       }))
       .pipe(dest('dist'))
+      .pipe(sync.reload({stream: true}))
 }
 
 function scss_build() {
@@ -33,6 +34,7 @@ function scss_build() {
       .pipe(rename((path) => path.extname = '.min.css'))
       .pipe(sourcemaps.write())
       .pipe(dest('dist/static/css/'))
+      .pipe(sync.reload({stream: true}))
 }
 
 function js_build() {
@@ -45,16 +47,19 @@ function js_build() {
       .pipe(rename((path) => path.extname = '.min.js'))
       .pipe(sourcemaps.write())
       .pipe(dest('dist/static/js/'))
+      .pipe(sync.reload({stream: true}))
 }
 
 function img_build() {
   return src('src/img/**/**.*')
       .pipe(dest('dist/static/img/'))
+      .pipe(sync.reload({stream: true}))
 }
 
 function fonts_build() {
   return src('src/fonts/**/**.*')
       .pipe(dest('dist/static/fonts/'))
+      .pipe(sync.reload({stream: true}))
 }
 
 function clear() {

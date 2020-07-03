@@ -1,7 +1,7 @@
 $red: red;
 $defaultFont: 'Montserrat';
 
-@import "components/mixins", "components/second";
+@import "components/reset", "components/mixins", "components/second";
 
 @import "../blocks/text-info/text-info";
 

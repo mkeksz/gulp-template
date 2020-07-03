@@ -27,7 +27,7 @@ function scss_build() {
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(autoprefixer({
-        browsers: ['last 2 versions']
+        overrideBrowserslist: ['last 2 versions']
       }))
       .pipe(csso())
       .pipe(rename((path) => path.extname = '.min.css'))

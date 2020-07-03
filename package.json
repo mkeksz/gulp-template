@@ -1,13 +1,17 @@
 {
   "name": "gulp-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Template of gulp for create layout web-sites",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkeksz/gulp-template.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "template",
+    "gulp"
+  ],
+  "author": "mrkeksz",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",

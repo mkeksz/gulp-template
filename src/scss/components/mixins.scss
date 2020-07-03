@@ -4,10 +4,9 @@
   font-size: $size;
   font-style: $style;
 }
-@mixin flex($direction: row, $justify: center, $align: stretch) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
+@mixin grid($justify: stretch, $align: stretch) {
+  display: grid;
+  justify-items: $justify;
   align-items: $align;
 }
 @mixin background-image($url, $repeat: no-repeat, $size: contain, $position: center) {

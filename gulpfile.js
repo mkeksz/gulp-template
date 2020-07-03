@@ -71,11 +71,11 @@ function serve() {
     server: './dist'
   })
 
-  watch('src/**/**.html', series(html_build)).on('change', sync.reload)
-  watch('src/**/**.scss', series(scss_build)).on('change', sync.reload)
-  watch('src/**/**.js', series(js_build)).on('change', sync.reload)
-  watch('src/img/**/**.*', series(img_build)).on('change', sync.reload)
-  watch('src/fonts/**/**.*', series(fonts_build)).on('change', sync.reload)
+  watch('src/**/**.html', series(html_build))
+  watch('src/**/**.scss', series(scss_build))
+  watch('src/**/**.js', series(js_build))
+  watch('src/img/**/**.*', series(img_build))
+  watch('src/fonts/**/**.*', series(fonts_build))
 }
 
 
